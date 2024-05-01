@@ -1,0 +1,50 @@
+[general]
+network_check_url=http://www.bing.com
+server_check_url=http://www.gstatic.com/generate_204
+server_check_timeout=2000
+resource_parser_url= https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/resource-parser.js
+geo_location_checker = http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
+udp_drop_list=443
+fallback_udp_policy=reject
+[dns]
+no-ipv6
+no-system
+server=223.5.5.5
+server=119.29.29.29
+server=114.114.114.114
+[policy]
+static=Telegram, US Servers, SG Servers, JP Servers, TW Servers, HK Servers, proxy, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+static=Emby, server-tag-regex=.*, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+static=兜底分流, US Servers, SG Servers, JP Servers, TW Servers, HK Servers, proxy, direct, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png
+url-latency-benchmark=HK Servers, server-tag-regex=🇭🇰️|香港|HK|HongKong, check-interval=3600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+url-latency-benchmark=TW Servers, server-tag-regex=🇨🇳|台湾|TW|Taiwan, check-interval=3600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+url-latency-benchmark=JP Servers, server-tag-regex=🇯🇵|日本|JP|Japan, check-interval=3600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+url-latency-benchmark=SG Servers, server-tag-regex=🇸🇬|新加坡|SG|Singapore, check-interval=3600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+url-latency-benchmark=US Servers, server-tag-regex=🇺🇸|美国|US|UnitedStates, check-interval=3600, tolerance=0, alive-checking=false, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+[server_remote]
+[filter_remote]
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list, tag=MyBlockAds, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Privacy/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Hijacking/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/ruleset/telegramcidr.txt, tag=Telegram, force-policy=Telegram, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Acreson77/Tool/main/QuantumultX/Rules/Emby.list, tag=Emby, force-policy=Emby, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/VirgilClyne/GetSomeFries/raw/main/ruleset/ASN.China.list, tag=ASN China, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+[rewrite_remote]
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/MyBlockAds.conf, tag=MyBlockAds, update-interval=172800, opt-parser=true, enabled=true
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=Boxjs, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机重定向, update-interval=172800, opt-parser=true, enabled=true
+[server_local]
+[filter_local]
+final,兜底分流
+[rewrite_local]
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=https://raw.githubusercontent.com/Yuanxsxs/QtumultX/master/Icon/Catcat/02f46f927e00c1d6.png, enabled=true
+[http_backend]
+[mitm]
+skip_validating_cert = false
+force_sni_domain_name = false
+hostname = -www.google.com, -weather-data.apple.com
+passphrase = 
+p12 = 
