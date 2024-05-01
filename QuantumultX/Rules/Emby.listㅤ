@@ -1,11 +1,11 @@
 # MisakaF
-DOMAIN-SUFFIX,emby.aca.best
-DOMAIN-SUFFIX,porn.aca.best
-DOMAIN-SUFFIX,misakaf.org
+HOST-SUFFIX,emby.aca.best
+HOST-SUFFIX,porn.aca.best
+HOST-SUFFIX,misakaf.org
 
 # 守候影院
-DOMAIN-SUFFIX,emby.cn2gias.uk
-DOMAIN-SUFFIX,post.cn2gias.uk
+HOST-SUFFIX,emby.cn2gias.uk
+HOST-SUFFIX,post.cn2gias.uk
 
 # PiliPili 
 HOST-SUFFIX,pilipiliultra.top
