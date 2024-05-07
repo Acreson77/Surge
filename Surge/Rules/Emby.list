@@ -1,3 +1,11 @@
+# pornemby
+DOMAIN-SUFFIX,pornemby.club
+DOMAIN-SUFFIX,ii00.cc
+
+# SYN
+DOMAIN-SUFFIX,stream.synn.cc
+DOMAIN-SUFFIX,stream.ntrrr.top
+
 # MisakaF
 DOMAIN-SUFFIX,emby.aca.best
 DOMAIN-SUFFIX,porn.aca.best
@@ -6,6 +14,9 @@ DOMAIN-SUFFIX,misakaf.org
 # 守候影院
 DOMAIN-SUFFIX,emby.cn2gias.uk
 DOMAIN-SUFFIX,post.cn2gias.uk
+
+# 私房菜Emby
+DOMAIN,notnetflix.cos.cat
 
 # PiliPili 
 DOMAIN-SUFFIX,pilipiliultra.top
