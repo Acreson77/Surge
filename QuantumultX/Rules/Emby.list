@@ -18,5 +18,5 @@ HOST,notnetflix.cos.cat
 HOST-SUFFIX,embyplus.org
 
 #牢大的野兽餐厅
-#US-V4 HOST-SUFFIX,emby-us-v4.mius.uk
-#FR-V6 HOST-SUFFIX,emby-fr-v6.mius.uk
+HOST-SUFFIX,emby-us-v4.mius.uk
+HOST-SUFFIX,emby-fr-v6.mius.uk
