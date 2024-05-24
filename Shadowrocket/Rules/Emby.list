@@ -16,3 +16,7 @@ DOMAIN,notnetflix.cos.cat
 
 # 纸片人
 DOMAIN-SUFFIX,embyplus.org
+
+# 牢大的野兽餐厅
+DOMAIN-SUFFIX,emby-us-v4.mius.uk
+DOMAIN-SUFFIX,emby-fr-v6.mius.uk
